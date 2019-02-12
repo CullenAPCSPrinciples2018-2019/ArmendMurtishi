@@ -1,0 +1,52 @@
+header {
+  color: rgb(0, 200, 0);
+  background-color: mintcream;
+  font-size: 1.25rem;
+  font-family: Times;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+nav {
+    border: .07rem solid lightgray;
+    width: 50%;
+    margin: 0 auto 1rem;
+} 
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -.35rem;
+}
+@media (max-width: 30rem) {
+    nav ul {
+        display: block;
+        margin: 0;
+    }
+    nav li {
+        margin: 0;
+        text-align: center;
+    }
+}
+nav li {
+    margin: 0 .35rem;
+}
+nav a:link, nav a:visited {
+    color: rgb(0, 200, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+nav a:hover, nav a:active {
+    text-decoration: underline;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+article {
+    flex: 1;
+}
+img {
+    max-width: 100%;
+}
